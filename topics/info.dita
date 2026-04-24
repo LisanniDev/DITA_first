@@ -4,6 +4,6 @@
     <title>Общие сведения об изделии</title>
     <conbody>
         <!-- Здесь переменная с определением -->
-        <keyword keyref="fullname"/> - <keyword keyref="description"/>
+        <p><keyword keyref="fullname"/> <keyword keyref="model"/> - <keyword keyref="description"/></p>
     </conbody>
 </concept>

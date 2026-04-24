@@ -2,11 +2,19 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Переменные общие</title>
+    <!-- Наименование организации -->
+    <keydef keys="company">
+        <topicmeta>
+            <keywords>
+                <keyword>ООО «Ревотех»</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
     <!-- Полное наименование изделия -->
     <keydef keys="fullname">
         <topicmeta>
             <keywords>
-                <keyword>Сервер</keyword>
+                <keyword>Сервер «Гравитон»</keyword>
             </keywords>
         </topicmeta>
     </keydef>
