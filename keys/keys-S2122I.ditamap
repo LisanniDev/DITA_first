@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Переменные модели</title>
+    <keydef keys="model">
+        <topicmeta>
+            <keywords>
+                <keyword>С2122И</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+    <keydef keys="code_product">
+        <topicmeta>
+            <keywords>
+                <keyword>АБВГ.123456.123</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+    <keydef keys="code_model">
+        <topicmeta>
+            <keywords>
+                <keyword>02</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+    <keydef keys="doc_version">
+        <topicmeta>
+            <keywords>
+                <keyword>V01</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+
+
+</map>

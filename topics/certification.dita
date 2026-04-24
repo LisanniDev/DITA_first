@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="certification">
+    <title>Сведения о сертификации</title>
+    <conbody>
+        <p>Изделие соответствует требованиям: ТР ТС 004/2011, ТР ТС 020/2011, ТР ЕАЭС 037/2016.</p>
+        <!-- Перечень регламентов -->
+    </conbody>
+</concept>

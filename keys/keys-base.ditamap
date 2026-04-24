@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Переменные общие</title>
+    <!-- Полное наименование изделия -->
+    <keydef keys="fullname">
+        <topicmeta>
+            <keywords>
+                <keyword>Сервер</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <!-- Полное наименование изделия (родительный падеж) -->
+    <keydef keys="fullname-RP">
+        <topicmeta>
+            <keywords>
+                <keyword>сервера</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <!-- Краткое наименование изделия -->
+    <keydef keys="shortname">
+        <topicmeta>
+            <keywords>
+                <keyword>АРМ</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <!-- Код ОКПД2 -->
+    <keydef keys="okpd2">
+        <topicmeta>
+            <keywords>
+                <keyword>14.102.03</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <!-- Наименование документа -->
+    <keydef keys="doc_name">
+        <topicmeta>
+            <keywords>
+                <keyword>Паспорт</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <!-- Код документа -->
+    <keydef keys="doc_code">
+        <topicmeta>
+            <keywords>
+                <keyword>ПС</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <!-- Определение изделия -->
+    <keydef keys="description">
+        <topicmeta>
+            <keywords>
+                <keyword>здесь написано определение изделия с маленькой буквы и с точкой в конце.</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+</map>

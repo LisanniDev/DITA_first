@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="acceptance">
+    <title>Сведения о приёмке</title>
+    <conbody>
+        <p>
+            Изделие серийного производства (серийный номер см. раздел  <xref href="table-info.dita">Основные сведения об изделии</xref>) изготовлено и принято в соответствии 
+            с требованиями действующих стандартов и технических условий <keyword keyref="code_product"/>ТУ, 
+            действующей технической документации, обеспечивающей соответсвие Техническим Регламентам.
+        </p>
+    </conbody>
+</concept>
