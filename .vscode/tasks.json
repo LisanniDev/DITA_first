@@ -13,7 +13,7 @@
     },
     {
       "label": "DITA: Build SELECTED",
-      "type": "shell",
+      "type": "process",
       "command": "powershell",
       "args": [
         "-ExecutionPolicy", "Bypass",
