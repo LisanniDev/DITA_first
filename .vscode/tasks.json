@@ -13,7 +13,7 @@
     },
     {
       "label": "DITA: Build SELECTED",
-      "type": "process",
+      "type": "shell",
       "command": "powershell",
       "args": [
         "-ExecutionPolicy", "Bypass",
@@ -35,7 +35,7 @@
     {
       "id": "models",
       "type": "promptString",
-      "description": "Введите модели (например: S20420,S21221)"
+      "description": "Введите модели (например: S2042O,S2122I)"
     }
   ]
 }

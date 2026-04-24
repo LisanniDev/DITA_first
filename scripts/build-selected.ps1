@@ -1,14 +1,18 @@
-param(
-    [Parameter(Mandatory=$true)]
-    [string]$maps
-)
+$mapsString = $args[1]
+if (-not $mapsString) {
+    throw "No models provided. Usage: build-selected.ps1 <model1,model2,...>"
+}
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$models = $mapsString -split ','
+Write-Host "DEBUG: Script root   = $PSScriptRoot"
+Write-Host "DEBUG: Maps dir     = $(Join-Path $PSScriptRoot '..\maps')"
+Write-Host "DEBUG: Models       = $models"
 
 . "$PSScriptRoot/utils.ps1"
 
 # разбиваем строку и нормализуем имена
-$maps = $maps -split "," | ForEach-Object {
+$maps = $mapsString -split "," | ForEach-Object {
     $m = $_.Trim()
 
     if ($m -notmatch "^main-") {

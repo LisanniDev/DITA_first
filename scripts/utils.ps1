@@ -79,6 +79,6 @@ function Get-FileName($keys) {
     if ($code_model -eq "00") {
         return "${code_product}${doc_code}_${doc_version}.pdf"
     } else {
-        return "${code_product}${doc_code}-${code_model}_${doc_version}.pdf"
+        return "${code_product}-${code_model}${doc_code}_${doc_version}.pdf"
     }
 }
