@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "DITA: Build ALL",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-File", "${workspaceFolder}/scripts/build-all.ps1"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "DITA: Build SELECTED",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-File", "${workspaceFolder}/scripts/build-selected.ps1",
+        "-maps", "${input:models}"
+      ]
+    },
+    {
+      "label": "DITA: Clean",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-File", "${workspaceFolder}/scripts/clean.ps1"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "models",
+      "type": "promptString",
+      "description": "Введите модели (например: S20420,S21221)"
+    }
+  ]
+}
