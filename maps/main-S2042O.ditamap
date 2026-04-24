@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title><keyword keyref="fullname"/> <keyword keyref="model"/></title>
+    <mapref href="../keys/keys-base.ditamap"/>
+    <mapref href="../keys/keys-S2042O.ditamap"/>
+    <mapref href="base.ditamap"/>
+</map>
