@@ -4,12 +4,10 @@ if (-not $mapsString) {
 }
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-$models = $mapsString -split ','
-Write-Host "DEBUG: Script root   = $PSScriptRoot"
-Write-Host "DEBUG: Maps dir     = $(Join-Path $PSScriptRoot '..\maps')"
-Write-Host "DEBUG: Models       = $models"
-
 . "$PSScriptRoot/utils.ps1"
+
+$DITA = "C:\dita-ot\bin\dita.bat"
+$PLUGIN_PATH = Resolve-Path "$PSScriptRoot/../plugins"
 
 # разбиваем строку и нормализуем имена
 $maps = $mapsString -split "," | ForEach-Object {
@@ -38,13 +36,13 @@ foreach ($m in $maps) {
     $tempDir = "$PSScriptRoot/../out/tmp_$m"
 
     # путь к DITA-OT (проверь свой)
-    $DITA = "C:\dita-ot-4.4\bin\dita.bat"
+    $DITA = "C:\dita-ot\bin\dita.bat"
 
     if (-not (Test-Path $DITA)) {
         throw "DITA-OT not found at $DITA"
     }
 
-    & $DITA -i $mapPath -f pdf -o $tempDir
+    & $DITA -i $mapPath -f pdf2 -o $tempDir -Dargs.plugin.path="$PLUGIN_PATH"
 
     $pdf = Get-ChildItem $tempDir -Filter *.pdf | Select-Object -First 1
 

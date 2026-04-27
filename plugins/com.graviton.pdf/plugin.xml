@@ -1,0 +1,12 @@
+<plugin id="com.graviton.pdf">
+    <require plugin="org.dita.pdf2"/>
+
+    <feature extension="dita.xsl.fo" file="cfg/fo/layout-masters.xsl"/>
+    <feature extension="dita.xsl.fo" file="cfg/fo/page-sequences.xsl"/>
+    <feature extension="dita.xsl.fo" file="cfg/fo/static-content.xsl"/>
+    <feature extension="dita.xsl.fo" file="cfg/fo/topic.xsl"/>
+    <feature extension="dita.xsl.fo" file="cfg/fo/attrs.xsl"/>
+    <feature extension="dita.xsl.fo" file="cfg/fo/commons-attr.xsl"/>
+
+    <feature extension="fop.config" file="fop/fop.xconf"/>
+</plugin>
