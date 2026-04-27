@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+
+<plugin id="com.graviton.ps-a5">
+  <require plugin="org.dita.pdf2"/>
+  <transtype name="ps-a5" extends="pdf" desc="PS on A5 paper"/>
+  <feature extension="dita.transtype.print" value="ps-a5"/>
+  <feature extension="ant.import" file="integrator.xml"/>
+</plugin>

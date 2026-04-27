@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project name="com.graviton.ps.a5">
-  <target name="dita2a5ps" depends="com.graviton.ps.a5__dita2a5ps">
-    <ant antfile="${dita.dir}/plugins/org.dita.pdf2/build.xml" target="dita2pdf2">
-      <property name="transtype" value="ps-a5"/>
-    </ant>
-  </target>
-</project>
