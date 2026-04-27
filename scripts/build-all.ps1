@@ -15,7 +15,7 @@ foreach ($map in $maps) {
     $tempDir = "$PSScriptRoot/../out/tmp_$mapName"
 
     $DITA = "C:\dita-ot-4.4\bin\dita.bat"
-    & $DITA -i $mapPath -f ps-a5 -o $tempDir
+    & $DITA -i $mapPath -f pdf -o $tempDir
 
     $pdf = Get-ChildItem $tempDir -Filter *.pdf | Select-Object -First 1
 
