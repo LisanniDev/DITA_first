@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="com.mycompany.pdf.a5">
+  <target name="dita2pdf-a5">
+    <ant antfile="${dita.dir}/plugins/org.dita.pdf2/build.xml">
+      <property name="transtype" value="pdf-a5"/>
+      <property name="outputFile" value="${output}"/>
+    </ant>
+  </target>
+</project>
