@@ -38,10 +38,13 @@
                     <row>
                         <entry>Комплектность</entry>
                         <entry>
-                            <lines><keyword keyref="fullname"/>
-                            Кабель питания
-                            Упаковка
-                            Руководство по эксплуатации</lines>
+                            <p><keyword keyref="fullname"/></p>
+                            &#10;
+                            <p>Кабель питания</p>
+                            &#10;
+                            <p>Упаковка</p>
+                            &#10;
+                            <p>Руководство по эксплуатации</p>
                         </entry>
                     </row>
                     <row>
@@ -67,7 +70,7 @@
                         <entry>https://graviton.ru</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="c2"><p><sup>*</sup> Наличие определяется договором (контрактом) поставки.</p></entry>
+                        <entry namest="c1" nameend="c2"><p>* Наличие определяется договором (контрактом) поставки.</p></entry>
                     </row>
                 </tbody>
             </tgroup>
