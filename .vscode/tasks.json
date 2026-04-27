@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "DITA: Собрать ВСЕ",
+      "label": "DITA: Build ALL",
       "type": "shell",
       "command": "powershell",
       "args": [
@@ -12,7 +12,7 @@
       "group": "build"
     },
     {
-      "label": "DITA: Собрать ВЫБРАННЫЕ",
+      "label": "DITA: Build SELECTED",
       "type": "shell",
       "command": "powershell",
       "args": [
@@ -20,25 +20,15 @@
         "-File", "${workspaceFolder}/scripts/build-selected.ps1",
         "-maps", "${input:models}"
       ]
-      "presentation": {
-    "reveal": "always",
-    "panel": "shared",
-    "focus": true
-  }
     },
     {
-      "label": "DITA: Очистить",
+      "label": "DITA: Clean",
       "type": "shell",
       "command": "powershell",
       "args": [
         "-ExecutionPolicy", "Bypass",
         "-File", "${workspaceFolder}/scripts/clean.ps1"
       ]
-      "presentation": {
-    "reveal": "always",
-    "panel": "shared",
-    "focus": true
-  }
     }
   ],
   "inputs": [
