@@ -7,7 +7,6 @@ if (-not $mapsString) {
 . "$PSScriptRoot/utils.ps1"
 
 $DITA = "C:\dita-ot\bin\dita.bat"
-$PLUGIN_PATH = Resolve-Path "$PSScriptRoot/../plugins"
 
 # разбиваем строку и нормализуем имена
 $maps = $mapsString -split "," | ForEach-Object {
@@ -42,7 +41,7 @@ foreach ($m in $maps) {
         throw "DITA-OT not found at $DITA"
     }
 
-    & $DITA -i $mapPath -f pdf2 -o $tempDir -Dargs.plugin.path="$PLUGIN_PATH"
+    & $DITA -i $mapPath -f pdf2 -o $tempDir
 
     $pdf = Get-ChildItem $tempDir -Filter *.pdf | Select-Object -First 1
 
