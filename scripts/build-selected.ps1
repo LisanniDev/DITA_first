@@ -44,7 +44,7 @@ foreach ($m in $maps) {
         throw "DITA-OT not found at $DITA"
     }
 
-    & $DITA -i $mapPath -f pdf -o $tempDir
+    & $DITA -i $mapPath -f ps-a5 -o $tempDir
 
     $pdf = Get-ChildItem $tempDir -Filter *.pdf | Select-Object -First 1
 

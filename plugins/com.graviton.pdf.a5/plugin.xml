@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plugin id="com.mycompany.pdf.a5">
-  <require plugin="org.dita.pdf2"/>
-  <feature extension="dita.transtype.print" value="pdf-a5"/>
-  <feature extension="dita.conductor.transtype.check" value="pdf-a5"/>
-</plugin>
