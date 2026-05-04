@@ -6,7 +6,8 @@ if (-not $mapsString) {
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 . "$PSScriptRoot/utils.ps1"
 
-$DITA = "C:\dita-ot\bin\dita.bat"
+$projectRoot = Resolve-Path "$PSScriptRoot/.."
+$DITA = "$projectRoot/dita-ot/bin/dita.bat"
 
 # разбиваем строку и нормализуем имена
 $maps = $mapsString -split "," | ForEach-Object {
@@ -34,14 +35,11 @@ foreach ($m in $maps) {
 
     $tempDir = "$PSScriptRoot/../out/tmp_$m"
 
-    # путь к DITA-OT (проверь свой)
-    $DITA = "C:\dita-ot\bin\dita.bat"
-
     if (-not (Test-Path $DITA)) {
         throw "DITA-OT not found at $DITA"
     }
 
-    & $DITA -i $mapPath -f pdf2 -o $tempDir
+    & $DITA -i $mapPath -f pdf2 -o $tempDir -v
 
     $pdf = Get-ChildItem $tempDir -Filter *.pdf | Select-Object -First 1
 
@@ -50,5 +48,5 @@ foreach ($m in $maps) {
     }
 
     Move-Item $pdf.FullName "$PSScriptRoot/../out/$fileName" -Force
-    Remove-Item $tempDir -Recurse -Force
+    #Remove-Item $tempDir -Recurse -Force
 }

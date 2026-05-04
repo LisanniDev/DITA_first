@@ -16,10 +16,10 @@
     <!-- Тело -->
     <xsl:attribute-set name="__body">
         <xsl:attribute name="font-family">
-            <xsl:value-of select="$body.font.family">
+            <xsl:value-of select="$body.font.family"/>
         </xsl:attribute>
         <xsl:attribute name="font-size">
-            <xsl:value-of select="$body.font.size">
+            <xsl:value-of select="$body.font.size"/>
         </xsl:attribute>
         <xsl:attribute name="line-height">1.2</xsl:attribute>
     </xsl:attribute-set>
@@ -28,7 +28,7 @@
     <!-- Уровень 1 -->
     <xsl:attribute-set name="h1.title">
         <xsl:attribute name="font-family">
-            <xsl:value-of select="$body.font.family">
+            <xsl:value-of select="$body.font.family"/>
         </xsl:attribute>
         <xsl:attribute name="font-size">12pt</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
@@ -38,7 +38,7 @@
     <!-- Уровень 2 -->
     <xsl:attribute-set name="h2.title">
         <xsl:attribute name="font-family">
-            <xsl:value-of select="$body.font.family">
+            <xsl:value-of select="$body.font.family"/>
         </xsl:attribute>
         <xsl:attribute name="font-size">10pt</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
@@ -49,7 +49,7 @@
     <!-- Уровень 3+ (ниже заимствуют) -->
     <xsl:attribute-set name="h3.title">
         <xsl:attribute name="font-family">
-            <xsl:value-of select="$body.font.family">
+            <xsl:value-of select="$body.font.family"/>
         </xsl:attribute>
         <xsl:attribute name="font-size">10pt</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>

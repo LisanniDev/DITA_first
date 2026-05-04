@@ -8,11 +8,11 @@
 
     <!-- Подключение кастомных модулей -->
     <xsl:import href="fonts.xsl"/>
-    <xsl:import href="variables.xsl"/>
+<!--   <xsl:import href="variables.xsl"/>
     <xsl:import href="numbering.xsl"/>
     <xsl:import href="commons.xsl"/>
     <xsl:import href="front-matter.xsl"/>
-    <xsl:import href="static-content.xsl"/>
+    <xsl:import href="static-content.xsl"/> -->
 
 
 </xsl:stylesheet>

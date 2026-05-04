@@ -1,7 +1,7 @@
 <plugin id="com.graviton.pdf">
     <require plugin="org.dita.pdf2"/>
 
-    <feature extension="dita.xsl.fo" file="cfg/fo/xsl/custom.xsl"/>
+    <feature extension="dita.xsl.xslfo" file="cfg/fo/xsl/custom.xsl"/>
 
     <feature extension="dita.conductor.pdf2.param" file="cfg/fo/attrs/basic-settings.xsl"/>
 </plugin>
