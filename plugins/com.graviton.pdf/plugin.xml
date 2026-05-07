@@ -1,7 +1,5 @@
 <plugin id="com.graviton.pdf">
     <require plugin="org.dita.pdf2"/>
-
-    <feature extension="dita.xsl.xslfo" file="cfg/fo/xsl/custom.xsl"/>
-
-    <feature extension="dita.conductor.pdf2.param" file="cfg/fo/attrs/basic-settings.xsl"/>
+    <transtype name="graviton-pdf" extends="pdf2" desc="PDF по брендбуку"/>
+    <feature extention="ant.inport" file="integrator.xml"/>
 </plugin>

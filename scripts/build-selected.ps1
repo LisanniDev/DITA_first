@@ -39,7 +39,7 @@ foreach ($m in $maps) {
         throw "DITA-OT not found at $DITA"
     }
 
-    & $DITA -i $mapPath -f pdf2 -o $tempDir -v
+    & $DITA -i $mapPath -f ps-pdf -o $tempDir
 
     $pdf = Get-ChildItem $tempDir -Filter *.pdf | Select-Object -First 1
 
@@ -48,5 +48,5 @@ foreach ($m in $maps) {
     }
 
     Move-Item $pdf.FullName "$PSScriptRoot/../out/$fileName" -Force
-    #Remove-Item $tempDir -Recurse -Force
+    Remove-Item $tempDir -Recurse -Force
 }

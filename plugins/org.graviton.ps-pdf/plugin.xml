@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+
+<plugin id="org.graviton.ps-pdf">
+    <require plugin="org.dita.pdf2"/>
+    <transtype name="ps-pdf" extends="pdf" desc="PDF по брендбуку"/>
+    <feature extension="dita.transtype.print" value="ps-pdf"/>
+    <feature extension="ant.import" file="integrator.xml"/>
+    <feature extension="dita.xsl.strings" file="xsl/common/strings.xml"/>
+</plugin>

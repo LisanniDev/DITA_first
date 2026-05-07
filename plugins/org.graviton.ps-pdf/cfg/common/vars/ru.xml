@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="../../../../org.dita.base/xsl/common/strings.rnc" type="application/relax-ng-compact-syntax"?>
+<variables>
+
+  <variable id="Table of Contents Chapter">Раздел <param ref-name="number"/>. </variable>
+
+  <variable id="Table of Contents Preface">Введение: </variable>
+  <variable id="Preface title">Введение</variable>
+
+  <variable id="Chapter with number">Раздел <param ref-name="number"/></variable>
+
+</variables>

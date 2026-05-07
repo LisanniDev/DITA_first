@@ -1,0 +1,9 @@
+<font-mappings>
+  <!-- Определяем семейство шрифтов -->
+  <font name="Roboto" font-family="'Roboto', sans-serif">
+    <font-file>fonts/Roboto-Light.ttf</font-file>
+    <font-file bold="true">fonts/Roboto-Regular.ttf</font-file>
+    <font-file italic="true">fonts/Roboto-LightItalic.ttf</font-file>
+  </font>
+  <!-- При необходимости можно определить и другие семейства -->
+</font-mappings>

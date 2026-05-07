@@ -1,5 +1,5 @@
 param (
-    [string]$PluginName = "com.graviton.pdf"
+    [string]$PluginName = "org.graviton.ps-pdf"
 )
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -30,13 +30,13 @@ if (Test-Path $pluginTarget) {
 }
 
 # 2. копировать новый
-Write-Host "Copying plugin..."
-Copy-Item $pluginSource $pluginTarget -Recurse -Force
+# Write-Host "Copying plugin..."
+# Copy-Item $pluginSource $pluginTarget -Recurse -Force
 
 # 3. интеграция плагинов
 Write-Host "Running DITA integration..."
-& $DITA --install=$pluginTarget
-& $DITA --clean
+& $DITA install --install $pluginSource
+# & $DITA --clean
 
 if ($LASTEXITCODE -ne 0) {
     throw "DITA integration failed"
